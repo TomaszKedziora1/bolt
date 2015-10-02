@@ -326,7 +326,7 @@ class Repository implements ObjectRepository
     public function save($entity, $silent = null)
     {
         try {
-            if ( $existing = $entity->getId() ) {
+            if ($existing = $entity->getId()) {
                 $creating = false;
             } else {
                 $creating = true;
